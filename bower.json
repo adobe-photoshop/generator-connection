@@ -1,0 +1,21 @@
+{
+  "name": "node-connection",
+  "version": "0.0.0",
+  "authors": [
+    "Ian Wehrman <wehrman@adobe.com>"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "eventEmitter": "~4.2.7",
+    "bluebird": "~1.2.4"
+  }
+}
