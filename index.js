@@ -28,7 +28,6 @@
 define(function (require, exports, module) {
     "use strict";
     
-    var NodeDomain = require("./lib/NodeDomain");
-        
-    module.exports = NodeDomain;
+    exports.NodeDomain = require("./lib/NodeDomain");
+    exports.NodeConnection = require("./lib/NodeConnection");
 });
