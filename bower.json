@@ -5,6 +5,7 @@
     "Ian Wehrman <wehrman@adobe.com>"
   ],
   "main": "index.js",
+  "moduleType": ["node"],
   "license": "MIT",
   "private": true,
   "ignore": [
