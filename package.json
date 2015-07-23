@@ -1,21 +1,13 @@
 {
   "name": "generator-connection",
-  "version": "1.0.0",
-  "description": "Generator Websocket RPC client",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iwehrman/node-connection.git"
+    "url": "https://github.com/adobe-photoshop/generator-connection.git"
   },
-  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iwehrman/node-connection/issues"
-  },
-  "homepage": "https://github.com/iwehrman/node-connection",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-jshint": "~0.10",
