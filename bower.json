@@ -1,7 +1,7 @@
 {
   "name": "generator-connection",
   "description": "Generator Websocket RPC client",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "authors": [
     "Ian Wehrman <wehrman@adobe.com>",
     "Cory McIlroy <mcilroy@adobe.com>"
