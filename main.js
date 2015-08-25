@@ -23,11 +23,30 @@
 
 
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
-/*global define, $ */
+/*global define */
 
-define(function (require, exports, module) {
+define(function (require, exports) {
     "use strict";
-    
+
+    /**
+     * This helper function will convert a generator domain name into
+     * the key that is used to store its custom preferences in photoshop.
+     *
+     * This assumes that the plugin registered a domain
+     * with the same name as the plugin itself
+     *
+     * The replacement logic must match generator-core
+     * See: generator's escapePluginId() function
+     *
+     * @param {string} domainName
+     * @return {string}
+     */
+    exports.domainPrefKey = function (domainName) {
+        return domainName && domainName.replace(/[^a-zA-Z0-9]/g, function (char) {
+            return "_" + char.charCodeAt(0) + "_";
+        });
+    };
+
     exports.NodeDomain = require("./lib/NodeDomain");
     exports.NodeConnection = require("./lib/NodeConnection");
 });
